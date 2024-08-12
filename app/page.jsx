@@ -68,6 +68,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between sm:p-24 p-4">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
         <h1 className="text-4xl p-4 text-center">what's in ur pantry? 🛒</h1>
+        <list />
         <div className="p-4">
           <form className="grid grid-cols-6 items-center text-gray-400">
             <input 
@@ -86,7 +87,7 @@ export default function Home() {
             />
             <button 
               onClick={addItem}
-              className="text-white bg-slate-400 hover:bg-slate-500 p-3 text-xl rounded-lg" 
+              className="text-black bg-slate-400 hover:bg-slate-500 hover:text-white p-3" 
               type="submit"
             >+
             </button>
@@ -103,7 +104,7 @@ export default function Home() {
                 </div>
                 <button 
                   onClick={() => deleteItem(item.id)}
-                  className="ml-8 p-4 border-l-2 border-slate-400 hover:bg-slate-400 w-16 hover:text-slate-50"
+                  className="ml-8 p-4 border-l-2 bg-slate-400 hover:bg-slate-500 w-16 hover:text-slate-50"
                 >
                   X
                 </button>
